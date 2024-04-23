@@ -19,6 +19,8 @@ export const Navigation = () => {
             <img src={logo} alt="React Logo" />
             <ul>
               {
+                //el exact en el navlink no está, ya que está el /lazyload como un modulo de pages tipo lazyloads
+                //entonces para que se active el nav-active en el classname, tenes que sacar el exact
                 routes.map(({ path, name }) => (
                   <li key={path}>
                     <NavLink
